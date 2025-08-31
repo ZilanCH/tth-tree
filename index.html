@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTH-Projects - Social Media Links</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TTH-Projects - Discord Gaming Community</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="floating-particles" id="particles"></div>
+    
     <div class="container">
-        <h1 class="title">TTH-Projects</h1>
-        <p class="subtitle">Folge uns auf Social Media (und Ege will Döner)</p>
-        
+        <header>
+            <h1 class="logo">TTH-Projects</h1>
+            <p class="subtitle">Discord Gaming Community</p>
+        </header>
+
+        <div class="description">
+            <h2><i class="fas fa-gamepad"></i> Über uns</h2>
+            <p>
+                Willkommen bei TTH-Projects! Wir sind eine leidenschaftliche Discord Gaming-Community, 
+                die sich dem gemeinsamen Spielen, der Entwicklung innovativer Gaming-Projekte und dem 
+                Aufbau einer freundlichen Community verschrieben hat. Egal ob du ein Gelegenheitsspieler 
+                oder Hardcore-Gamer bist - bei uns findest du Gleichgesinnte für spannende Gaming-Sessions 
+                und kreative Projekte.
+            </p>
+        </div>
+
         <div class="social-links">
-            <a href="https://github.com/zilanch" class="social-link github">
-                <span class="social-icon">🐙</span>
-                GitHub
+            <a href="https://dc.tth-projects.de" target="_blank" class="social-link">
+                <i class="fab fa-discord"></i>
+                <span>Discord Server</span>
             </a>
-        
-            <a href="https://insta.tth-projects.de" class="social-link instagram">
-                <span class="social-icon">📷</span>
-                Instagram
+            <a href="https://whatsapp.com/channel/0029Vb6IErs9MF8rXxw7pj0Q" target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Channel</span>
             </a>
-            
-            <a href="https://youtube.com/@miyakomc_live" class="social-link youtube">
-                <span class="social-icon">📹</span>
-                YouTube
-            </a>
-            
-            <a href="https://dc.tth-projects.de" class="social-link discord">
-                <span class="social-icon">🎮</span>
-                Discord
+            <a href="https://insta.tth-projects.de" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
             </a>
         </div>
+
+        <div class="posts-section">
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Neuigkeiten</h2>
+            <div class="posts-grid" id="postsContainer">
+                <!-- Posts werden hier dynamisch eingefügt -->
+            </div>
+        </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
